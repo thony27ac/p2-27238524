@@ -70,12 +70,12 @@
          
         </div>
                 <form method="post" action="/" class="mensaje">
-                    <input class="nombre" name='nombre' type="text" placeholder="Ingrese su nombre" required="true" value="<%= modelo.nombre%>">
-                    <input class="mail" name='email' type="email"  placeholder="Ingrese su email" required="true" value="<%= modelo.email%>">
-                    <input class="contenido"  name='comentario' type="text" placeholder="Comentario" required="true" value="<%= modelo.comentario%>">
-                    <input type="hidden" value="<%= ct.ip%>">
-                    <input type="hidden"  value="<%= ct.fecha%>">
-                    <input type="hidden"  value="<%= ct.pais%>">
+                  <input class="form_input" name='email' type="email" placeholder="Ingrese su Email" value="<%= ct.email%>" required="true">
+                  <input class="form_input" name='nombre' type="text"  placeholder="Ingrese su Nombre" value="<%= ct.nombre%>" required="true">
+                  <input class="form_input"  name='comentario' type="text" placeholder="Comentario" value="<%= ct.comentario%>" required="true">
+                  <input type="hidden" value="<%= ct.ip%>"/>
+                  <input type="hidden"  value="<%= ct.fecha%>">
+                  <input type="hidden"  value="<%= ct.pais%>">
                     <div class="g-recaptcha" data-sitekey="<%= GOOGLE_RECAPTCHA%>">
                     <input type="submit" class="enviar" value="Enviar">
                 </form>
