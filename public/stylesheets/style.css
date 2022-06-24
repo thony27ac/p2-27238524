@@ -1,0 +1,125 @@
+*{
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+body{
+  background: #aaf;
+}
+
+
+
+.container{
+  width: 900px;
+  height: 1150px;
+  background: #a8f ;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.mis_datos{
+  width: 900px;
+  height: 220px;
+  background: #a0f;
+  display: inline-block;
+}
+
+.img{
+  height: 180px;
+  width: 180px;
+  margin-left: 30px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.img img{
+  height: 180px;
+  width: 180px;
+  border-radius: 100%;
+}
+
+/*.personal{
+  height: 180px;
+  width: 650px;
+  background: red;
+  margin: 10px;
+  display: inline-block;
+}*/
+
+h1{
+  display: inline-block;
+}
+
+.datos{
+  display: inline-block;
+  color: #fff;
+  margin-left: 100px;
+}
+
+article{
+  width: 800px;
+  border-bottom: 2px solid #a0f;
+  margin: 10px;
+  margin: auto;
+  padding: 7px;
+
+}
+
+.ar_1{
+  height: 145px;
+
+}
+
+article h3{
+  text-align: center;
+  color: #a0f;
+  padding: 10px;
+}
+
+li{
+}
+
+.ar_4 div{
+  display: inline-block;
+}
+
+
+
+.ar_4 div img{
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  margin-left: 150px;
+}
+
+form{
+  border: 2px solid #a0f;
+  height:300px;
+  width: 400px;
+  text-align: center;
+  margin: 80px auto;
+}
+
+input{
+  padding: 5px;
+  width: 300px;
+  display: block;
+  margin: 10px auto;
+  outline: none;
+  background: #aaf;
+  border: none;
+}
+
+.comentario{
+  height: 100px;
+}
+
+form h3{
+  color: #a0f;
+}
+
+.enviar:hover{
+  background: #a0f;
+}
+

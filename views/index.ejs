@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta autor="Anthony Correa">
+    <!--OpenGraph-->
+    <meta property="og:title" content="Curriculum"/>
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://curriculum-p2.herokuapp.com/"/>
+    <!-------->
+    <meta description="Curriculum vitae hecho con express y EJS">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>Curriculum</title>
+  </head>
+  <body>
+<div class="container">
+        <div class="mis_datos">
+          <div class="img"><img src="images/img.jpg" alt=""></div>
+            <div class="datos">
+                <h1>Anthony José Correa Correa</h1><br>
+                <h2>Cedula: 2723852</h2><br>
+                <h2>Edad: 22 años</h2><br>
+            </div>
+
+        
+       
+         </div>
+         <div class="article">
+          
+        
+          <article class="ar_2">
+            <h3>Formacion Academica</h3>
+            <ul class="lista_1">
+                <li><b>2015</b>: U.E colegio Santiago Mariño</li>
+                <br>
+                <li>Cuento con experiencia en la instalación de camaras de seguridad</li><br>
+                <li>Cuento con conocimiento de barberia</li><br>
+            </ul>
+              
+          </article>
+
+          <article class="ar_3">
+               <h3>Redes sociales</h3>
+            <ul>
+                <li><b>Facebook:</b><a target="_blank" href="https://www.facebook.com/anthony.correa.16503">Aquí</a></li><br>
+                <li><b>Telefono: +584242925538</b></li><br>
+                <li><b>Correo Electronico:</b>anthonysvmadm@gmail.com</li>
+            </ul>
+
+          </article>
+
+          
+          <article class="ar_5">    
+            <h3>Habilidades y Destrezas</h3>
+                <ul>
+                    <li>Buen trabajo en equipo</li>
+                    <li>Adaptabilidad</li>
+                    <li>Buen manejo de los sistemas informaticos</li>
+                    <li>Manejo de camaras de seguridad</li>
+                    <li>Manejo basico de phpmyadmin</li>
+                    <li>Tolerante</li>
+                    <li>Jugador con experiencia en voleibol</li>
+                </ul>
+          </article>
+
+         
+        </div>
+                <form method="post" action="/" class="mensaje">
+                    <input class="nombre" name='nombre' type="text" placeholder="Ingrese su nombre" required="true" value="<%= modelo.nombre%>">
+                    <input class="mail" name='email' type="email"  placeholder="Ingrese su email" required="true" value="<%= modelo.email%>">
+                    <input class="contenido"  name='comentario' type="text" placeholder="Comentario" required="true" value="<%= modelo.comentario%>">
+                    <input type="hidden" value="<%= ct.ip%>">
+                    <input type="hidden"  value="<%= ct.fecha%>">
+                    <input type="hidden"  value="<%= ct.pais%>">
+                    <div class="g-recaptcha" data-sitekey="<%= GOOGLE_RECAPTCHA%>">
+                    <input type="submit" class="enviar" value="Enviar">
+                </form>
+     </div>
+  </body>
+</html>

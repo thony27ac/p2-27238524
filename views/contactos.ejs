@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="stylesheets/contactos.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <div>
+    <h1>Contactos</h1>
+    </div>>
+    <div class="contenedor">
+        <div class="tabla">
+        <table>
+        <thead>
+        <tr>
+        <th scope="col"> Email</th>
+        <th scope="col"> Nombre </th>
+        <th scope="col"> Comentario </th>
+        <th scope="col">Fecha</th> 
+        <th scope="col"> IP </th>      
+        <th scope="col"> País </th>      
+        </tr>
+        </thead>
+        <tbody>
+            <% for (const producto of ct) { %>
+                <tr> 
+                <td><%= producto.email%></td>
+                <td><%= producto.nombre%></td>
+                <td><%= producto.comentario%></td>
+                <td><%= producto.fecha%></td>
+                <td><%= producto.ip%></td>
+                <td><%= producto.country%></td>
+        <% } %>
+        </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
