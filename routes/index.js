@@ -12,9 +12,9 @@ const PassportLocal = require('passport-local').Strategy;
 require('dotenv').config();
 
 router.use(express.urlencoded({extended: true}));
-router.use(cookieParser(process.env.BARBER));
+router.use(cookieParser('SECRET'));
 router.use(session({
-	secret: process.env.BARBER,
+	secret: 'SECRET',
 	resave: true,
 	saveUninitialized: true
 }));
