@@ -24,7 +24,7 @@ router.use(passport.session());
 
 passport.use( new PassportLocal(function(username, password, done){
 
-	if(username === process.env.USUARIO && password === process.env.CONTRASEÑA)
+	if(username === 'anthony@gmail.com' && password === 'barbero2022')
 		return done(null,{id: 1, name: "Anthony"});
 
 	done(null, false)
